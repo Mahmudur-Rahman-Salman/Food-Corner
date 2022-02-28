@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import bike from '../../img/bike.png';
 import food from '../../img/fast-food.png'
 import './Header.css';
 
