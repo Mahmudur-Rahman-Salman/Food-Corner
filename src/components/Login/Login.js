@@ -10,7 +10,7 @@ const Login = () => {
             <div className='text-center shadow p-5 bg-dark'>
                 <h4 className='text-light border-bottom'>Login</h4>
                 <br /> <br />
-                <button className='bg-danger text-light' onClick={handleGoogleSignIn}>Sign In With Google</button>
+                <button className='bg-danger text-light rounded-pill p-2 border-0' onClick={handleGoogleSignIn}>Sign In With Google</button>
             </div>
             <br /><br /><br />
             <br /><br /><br />
