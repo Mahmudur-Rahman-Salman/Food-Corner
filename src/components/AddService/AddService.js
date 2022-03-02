@@ -13,7 +13,7 @@ const AddService = () => {
 
         const products = { name, image, description };
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://evening-beach-74609.herokuapp.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
