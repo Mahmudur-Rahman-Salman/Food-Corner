@@ -7,9 +7,8 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
-import PlaceOrder from './components/PlaceOrder/PlaceOrder';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Services from './components/Services/Services';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute'
 import AuthProvider from './context/AuthProvider';
 
 function App() {
@@ -25,8 +24,9 @@ function App() {
             <Route path='/services'> <Services></Services> </Route>
             <Route path='/addservice'> <AddService></AddService> </Route>
             <Route path='/login'> <Login></Login> </Route>
-            <Route path='/services/placeorder/:id'> <PlaceOrder></PlaceOrder> </Route>
-
+            <PrivateRoute path="booking/:bookingId">
+              
+            </PrivateRoute>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>
