@@ -8,8 +8,10 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Services from './components/Services/Services';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute'
+// import PrivateRoute from './components/PrivateRoute/PrivateRoute'
 import AuthProvider from './context/AuthProvider';
+import Order from './components/Order/Order';
+
 
 function App() {
   return (
@@ -23,10 +25,15 @@ function App() {
             <Route path='/about'> <About></About> </Route>
             <Route path='/services'> <Services></Services> </Route>
             <Route path='/addservice'> <AddService></AddService> </Route>
+            <Route path='/order/:id'>
+              <Order></Order>
+            </Route>
+           
             <Route path='/login'> <Login></Login> </Route>
-            <PrivateRoute path="booking/:bookingId">
+            {/* <PrivateRoute path="booking/:bookingId">
               
             </PrivateRoute>
+             */}
           </Switch>
           <Footer></Footer>
         </BrowserRouter>

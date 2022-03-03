@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
-    const { name, _id, image, description } = service;
+    const { name, _id, image, description, price } = service;
     // const history = useHistory();
 
     // const handleClick = () => {
@@ -17,14 +17,13 @@ const Service = ({ service }) => {
                 <div className="card-body text-center">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">{description}</p>
-                    <Link to={`/booking/${_id}`}>
+                    <h5>Price: ${price}</h5>
+                    <Link to={`/order/${_id}`}>
                         <button type="button" className="btn btn-outline-success">Order Now</button>
                     </Link>
-                    {/* <button type="button" onClick={handleClick} className="btn btn-outline-success">Order Now</button> */}
-
                 </div>
-
             </div>
+            
         </div >
     );
 };
