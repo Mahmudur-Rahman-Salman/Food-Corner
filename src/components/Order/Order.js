@@ -11,7 +11,7 @@ const Order = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${id}`)
+        fetch(`https://evening-beach-74609.herokuapp.com/services/${id}`)
             .then(res => res.json())
             .then(data => setInfo(data))
     }, [])
@@ -21,7 +21,7 @@ const Order = () => {
         const address = addressRef.current.value;
 
         const add = { address }
-        fetch('http://localhost:5000/orders', {
+        fetch('https://evening-beach-74609.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
